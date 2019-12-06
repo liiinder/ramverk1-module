@@ -10,7 +10,7 @@ return [
     // all the other views are rendered.
     "layout" => [
         "region" => "layout",
-        "template" => "view/layout/default",
+        "template" => "test/view/default",
         "data" => [
             "baseTitle" => " | ramverk1",
         ],

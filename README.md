@@ -3,7 +3,7 @@ Weather Module for ANAX framework
 
 Install with composer `composer require liiinder/ramverk1-module`
 
-Then you need to move these specific files from the module to the framework
+Then you need to move these specific folders from the module to the framework
 
     rsync -av vendor/liiinder/ramverk1-module/view/ view/
     rsync -av vendor/liiinder/ramverk1-module/config/ config/
