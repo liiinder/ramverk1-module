@@ -14,5 +14,12 @@ rsync -av vendor/liiinder/ramverk1-module/view/ view/
 # Copy the content files (adds the api document route)
 rsync -av vendor/liiinder/ramverk1-module/content/ content/
 
-# Change name of api_sample
-mv config/api_sample.php config/api.php
+# Check if api.php is present in the project
+# If not make one out of the sample
+# And if it exist just echo and dont overwrite.
+FILE="config/api.php"
+if test -f "$FILE"; then
+    echo "$FILE exist"
+else
+    cp config/api_sample.php config/api.php
+fi
