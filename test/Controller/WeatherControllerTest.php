@@ -72,8 +72,8 @@ class WeatherControllerTest extends TestCase
         // Doesnt really matter as we dont use the real API
         $body = $res->getBody();
         // checking so it got the summary from the mock api
-        $this->assertContains('2018-12-16 - Molnigt under dagen.', $body);
-        
+        $this->assertContains('Molnigt under dagen. Temp: -0.23&#8451 - 2.07&#8451<br>', $body);
+
         // Test the return type
         $this->assertIsObject($res);
         $this->assertInstanceOf("Anax\Response\Response", $res);
