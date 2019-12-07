@@ -2,13 +2,7 @@ imports:
     - php
 
 filter:
-    excluded_paths: [
-        vendor/*,
-        test/*,
-        a/*,
-        .bin/*,
-        .anax/*
-    ]
+    excluded_paths: [ vendor/*, test/*, a/*, .bin/*, .anax/*]
 
 build:
     nodes:
