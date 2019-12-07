@@ -61,7 +61,7 @@ class WeatherControllerTest extends TestCase
         $this->di->get("request")->setGet("type", "past");
         $res = $this->controller->indexAction();
         $body = $res->getBody();
-        $this->assertContains('2018-12-16 - Molnigt under dagen.', $body);
+        $this->assertContains('Molnigt under dagen. Temp: -0.23&#8451 - 2.07&#8451<br>', $body);
 
         // Test a city and coming weather
         $this->di->get("request")->setGet("type", "coming");
