@@ -31,7 +31,6 @@ class WeatherController implements ContainerInjectableInterface
             $res = $this->di->get("ipverifier")->getJson($search);
             $res = ((!$res["latitude"]) || (!$res["longitude"])) ? "" : $res["latitude"] . "," . $res["longitude"];
         } else {
-            $config = $this->di->get("configuration")->load("api.php");
             $geocoder = $this->di->get("geocoder");
             $coords = new Coordinates($geocoder);
             $res = $coords->getCoordinates($search ?? $default);
