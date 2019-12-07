@@ -13,6 +13,10 @@ class APIMockController implements ContainerInjectableInterface
 {
     use ContainerInjectableTrait;
 
+    /**
+     * Main index page, serves as the ip mock
+     * @return Array
+     */
     public function indexAction() : array
     {
         $ip = $this->di->request->getGet("ip") ?: $this->di->request->getServer("REMOTE_ADDR");
@@ -22,6 +26,11 @@ class APIMockController implements ContainerInjectableInterface
         ];
     }
 
+    /**
+     * Darksky mock route which mocks the return
+     * type from the external darksky api
+     * @return Array
+     */
     public function darkSkyMockAction() : Array
     {
         $darksky = new \Linder\Mock\DarkSkyMock();

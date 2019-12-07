@@ -18,7 +18,7 @@ class WeatherAPIController implements ContainerInjectableInterface
     /**
      * This is the index method action, it handles:
      *
-     * @return object
+     * @return Array
      */
     public function indexAction() : array
     {

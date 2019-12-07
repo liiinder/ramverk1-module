@@ -9,6 +9,7 @@ use Linder\Model\IpVerifier;
 /**
  * A controller that handles a get request
  * uses a model and returns a Json.
+ * @return Array
  */
 class IpVerifierAPIController implements ContainerInjectableInterface
 {

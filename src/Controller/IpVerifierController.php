@@ -9,6 +9,7 @@ use Linder\Model\IpVerifier;
 /**
  * A controller that handles a get request
  * and returns if its a valid ip or not.
+ * @return Object
  */
 class IpVerifierController implements ContainerInjectableInterface
 {
