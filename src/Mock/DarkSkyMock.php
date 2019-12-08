@@ -7,11 +7,9 @@ class DarkSkyMock
     /**
      * Function that takes an coordinate and gets upcomming weather.
      *
-     * @param string $latlon
-     *
      * @return array $result
      */
-    public function getWeatherComing(String $latlon) : array
+    public function getWeatherComing() : array
     {
         $response = '{
     "latitude": 57.70887,
@@ -395,11 +393,9 @@ class DarkSkyMock
     /**
      * Function that takes an coordinate and get past 30 days weather
      *
-     * @param string $latlon
-     *
      * @return array $result
      */
-    public function getWeatherPast(String $latlon) : array
+    public function getWeatherPast() : array
     {
         $json = '{
     "latitude": 57.70887,
