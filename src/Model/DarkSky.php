@@ -17,7 +17,7 @@ class DarkSky
     /**
      * Constructor, allow for $di to be injected.
      *
-     * @param $config e container
+     * @param array $config container
      */
     public function __construct(Array $config)
     {
@@ -44,7 +44,8 @@ class DarkSky
     {
         $res = [];
         $res[0] = $this->curl->single($this->config["url"] . $latlon . $this->config["single"]);
-        for ($i = 0; $i < count($res[0]["daily"]["data"]); $i++) {
+        $size = count($res[0]["daily"]["data"]);
+        for ($i = 0; $i < $size; $i++) {
             $time = $res[0]["daily"]["data"][$i]["time"];
             $res[0]["daily"]["data"][$i]["date"] = date("Y-m-d", $time);
         }
@@ -69,7 +70,8 @@ class DarkSky
             $urls[] = $this->config["url"] . $latlon . "," . $curr . $this->config["multi"];
         }
         $res = $this->curl->multi($urls);
-        for ($i = 0; $i < count($res); $i++) {
+        $size = count($res);
+        for ($i = 0; $i < $size; $i++) {
             $time = $res[$i]["daily"]["data"][0]["time"];
             $res[$i]["daily"]["data"][0]["date"] = date("Y-m-d", $time);
         }
