@@ -36,8 +36,8 @@ class APIMockController implements ContainerInjectableInterface
         $darksky = new \Linder\Mock\DarkSkyMock();
         $url = $this->di->request->getCurrentUrl();
         $res = (strpos($url, "?exclude=currently,flags") || $this->di->request->getGet("type") == "past") ?
-            $darksky->getWeatherPast("") :
-            $darksky->getWeatherComing("");
+            $darksky->getWeatherPast() :
+            $darksky->getWeatherComing();
         return $res;
     }
 }
