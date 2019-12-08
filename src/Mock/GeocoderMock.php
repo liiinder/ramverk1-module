@@ -14,7 +14,7 @@ class GeocoderMock extends AbstractGeocoder
      *
      * @param string $value
      *
-     * @return string
+     * @return array
      */
     public function geocode($search) : Array
     {
