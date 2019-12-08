@@ -23,6 +23,7 @@ class WeatherAPIController implements ContainerInjectableInterface
     public function indexAction() : array
     {
         $search = $this->di->get("request")->getGet("search");
+        $latlon = "";
 
         if (filter_var($search, FILTER_VALIDATE_IP)) {
             $res = $this->di->get("ipverifier")->getJson($search);
