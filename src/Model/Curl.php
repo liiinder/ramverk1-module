@@ -25,7 +25,7 @@ class Curl
         ];
         //  Initiate curl handler
         $ch = curl_init();
-        if $ch {
+        if ($ch) {
             // Set options
             curl_setopt_array($ch, $options);
             // Execute
@@ -56,7 +56,7 @@ class Curl
         // Add all curl handlers and remember them
         // Initiate the multi curl handler
         $mh = curl_multi_init();
-        if $mh {
+        if ($mh) {
             $chAll = [];
             foreach ($urls as $url) {
                 $ch = curl_init($url);
