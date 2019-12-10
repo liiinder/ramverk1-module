@@ -47,8 +47,6 @@ class APIMockControllerTest extends TestCase
         $this->assertEquals("194.47.150.9", $res[0]["ip"]);
         $this->assertArrayHasKey("type", $res[0]);
         $this->assertEquals("ipv4", $res[0]["type"]);
-        $this->assertArrayHasKey("domain", $res[0]);
-        $this->assertContains("dbwebb", $res[0]["domain"]);
 
         // testing a false ip
         $ip = "ThisNoIP";

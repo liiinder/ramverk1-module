@@ -12,7 +12,7 @@ class Coordinates
      * Constructor, allow for $geocoder to be injected.
      *
      * @param AbstractGeocoder $geocoder a service that fetches coordinates from a query
-     * 
+     *
      * @return string "latitude,longitude" for example 56.0505,124.100101
      */
     public function __construct(AbstractGeocoder $geocoder)

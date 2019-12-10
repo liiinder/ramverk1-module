@@ -34,7 +34,6 @@ class Curl
         $res = json_decode($data, true);
         
         return $res;
-
     }
 
     /**
