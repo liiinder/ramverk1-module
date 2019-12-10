@@ -1,3 +1,13 @@
+[![Build Status](https://travis-ci.org/liiinder/ramverk1-module.svg?branch=master)](https://travis-ci.org/liiinder/ramverk1-module)
+
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/liiinder/ramverk1-module/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/liiinder/ramverk1-module/?branch=master)
+
+[![Code Coverage](https://scrutinizer-ci.com/g/liiinder/ramverk1-module/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/liiinder/ramverk1-module/?branch=master)
+
+[![Build Status](https://scrutinizer-ci.com/g/liiinder/ramverk1-module/badges/build.png?b=master)](https://scrutinizer-ci.com/g/liiinder/ramverk1-module/build-status/master)
+
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/liiinder/ramverk1-module/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
+
 Weather Module for ANAX framework
 =================================
 
